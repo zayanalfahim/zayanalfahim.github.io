@@ -1,550 +1,1376 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="//portfolio.zayanalfahim.com/simple.portfolio/assets/img/favicon.png" type="image/x-icon">
-        
-        <!--=============== REMIX ICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY PORTFOLIO - ZAYAN AL FAHIM</title>
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="//portfolio.zayanalfahim.com/simple.portfolio/assets/css/style.css">
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="https://www.zayanalfahim.info/my.portfolio/assets/img/favicon.png" type="image/x-icon">
 
-        <title>ZAYAN AL FAHIM</title>
-    </head>
-    <body>
-        <!--=============== HEADER ===============-->
-        <header class="profile container">
-            <!-- Theme button -->
-            <i class="ri-moon-line change-theme" id="theme-button"></i>
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="https://www.zayanalfahim.info/my.portfolio/assets/css/style.css">
 
-            <div class="profile__container grid">
-                <div class="profile__data">
-                    <div class="profile__border">
-                        <div class="profile__perfil">
-                            <!-- Insert your image, according to the example size of the portfolio -->
-                            <img src="//portfolio.zayanalfahim.com/simple.portfolio/assets/img/perfil.png" alt="">
-                        </div>
-                    </div>
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
 
-                    <h2 class="profile__name">ZAYAN AL FAHIM</h2>
-                    <h3 class="profile__profession">Web Developer</h3>
+<body>
 
-                    <ul class="profile__social">                   	
-                       
-                        <a href="https://www.linkedin.com/in/zayanalfahim" target="_blank" class="profile__social-link">
-                            <i class="ri-linkedin-box-line"></i>
-                        </a>
+  <!--
+    - #MAIN
+  -->
 
-                    	<a href="https://github.com/zayanalfahim" target="_blank" class="profile__social-link">
-                            <i class="ri-github-line"></i>
-                        </a>
-                                                                   
-                        <a href="https://developer.zayanalfahim.com" target="_blank" class="profile__social-link">
-                            <i class="ri-earth-line"></i>
-                        </a> 
-                       
-                        </ul>
-                </div>
+  <main>
 
-                <div class="profile__info grid">
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number">+28</h3>
-                        <p class="profile__info-description">
-                            Completed <br> Projects
-                        </p>
-                    </div>
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number">25</h3>
-                        <p class="profile__info-description">
-                            Satisfied <br> Customers
-                        </p>
-                    </div>
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number">5</h3>
-                        <p class="profile__info-description">
-                            Awards <br> Won
-                        </p>
-                    </div>
-                </div>                                        
+    <!--
+      - #SIDEBAR
+    -->
 
-                <div class="profile__buttons">
-                    <!-- Insert your CV -->
-                    <a href="https://portfolio.zayanalfahim.com/resume.cv" target="_blank" class="button">
-                        MY RESUME <i class="ri-file-text-line"></i>
-                    </a>
+    <aside class="sidebar" data-sidebar>
 
-                    <div class="profile__buttons-small">
-                        <!-- Insert a real number plus country code -->
-                        <a href="tel:+8801732904953" target="_blank" class="button button__small button__gray">
-                            <i class="ri-phone-line"></i>
-                        </a>
-                        <!-- Insert your brand name or profile -->
-                        <a href="mailto:contact@zayanalfahim.com" target="_blank" class="button button__small button__gray">
-                            <i class="ri-mail-line"></i>
-                        </a>
-                    </div>
-                </div>
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/profile.png" alt="ZAYAN AL FAHIM" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="ZAYAN AL FAHIM">ZAYAN AL FAHIM</h1>
+
+          <p class="title">Web Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
             </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+8801732904953" class="contact-link">+880 1732-904953</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:contact@zayanalfahim.info" class="contact-link">contact@zayanalfahim.info</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Chattogram, Bangladesh</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/zayanalfahim" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.twitter.com/zayanalfahim" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          
+          <li class="social-item">
+            <a href="https://www.instagram.com/zayanalfahim" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/zayanalfahim" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          
+          <li class="social-item">
+            <a href="https://www.github.com/zayanalfahim" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>ABOUT</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>RESUME</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>PORTFOLIO</button>
+          </li>
+          
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>BLOG</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>CONTACT</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">WHO AM I</h2>
         </header>
 
-        <!--=============== MAIN ===============-->
-        <main class="main">
-            <section class="filters container">
-                <!--=============== FILTERS TABS ===============-->
-                <ul class="filters__content">
-                    <button class="filters__button filter-tab-active" data-target="#projects">
-                        PROJECTS
-                    </button>
-                    <button class="filters__button" data-target="#skills">
-                        SKILLS
-                    </button>
-                </ul>
+        <section class="about-text">
+          <p>
+            Hi, I'm zayan al fahim,</br>
+            a full-stack web developer with experience in building websites. I’ve worked internationally and in-house on projects for leading brands, agencies and startups.</br>
+            I care deeply about providing world-class, useful, and beautiful services that help people and make a difference...
+          </p>
+        </section>
 
-                <div class="filters__sections">
-                    <!--=============== PROJECTS ===============-->
-                    <div class="projects__content grid filters__active" data-content id="projects">
-                        <article class="projects__card">
-                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
-                            <img src="//portfolio.zayanalfahim.com/simple.portfolio/assets/img/project_28.jpg" alt="RESUME CV" class="projects__img">
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Resume WebSite</span>
-                                    <h3 class="projects__title">RESUME CV</h3>
-                                    <a href="https://portfolio.zayanalfahim.com/resume.cv" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                        
-                        <article class="projects__card">
-                            <img src="//portfolio.zayanalfahim.com/simple.portfolio/assets/img/project_27.jpg" alt="SIMPLE PORTFOLIO" class="projects__img">
+        <!--
+          - service
+        -->
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Portfolio WebSite</span>
-                                    <h3 class="projects__title">SIMPLE PORTFOLIO</h3>
-                                    <a href="https://portfolio.zayanalfahim.com/simple.portfolio" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                        
-                        <article class="projects__card">
-                            <img src="//portfolio.zayanalfahim.com/simple.portfolio/assets/img/project_26.jpg" alt="MY PORTFOLIO" class="projects__img">
+        <section class="service">
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Portfolio WebSite</span>
-                                    <h3 class="projects__title">MY PORTFOLIO</h3>
-                                    <a href="https://portfolio.zayanalfahim.com/my.portfolio" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                        
-                        <article class="projects__card">
-                            <img src="//portfolio.zayanalfahim.com/simple.portfolio/assets/img/project_25.jpg" alt="ZAF EXPRESS BD" class="projects__img">
+          <h3 class="h3 service-title">WHAT I DO</h3>
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">E-commerce Site</span>
-                                    <h3 class="projects__title">ZAF EXPRESS BD</h3>
-                                    <a href="https://zaf-express-bd.blogspot.com" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                        
-                        <article class="projects__card">
-                            <img src="//portfolio.zayanalfahim.com/simple.portfolio/assets/img/project_24.jpg" alt="TRAVEL WEBSITE" class="projects__img">
+          <ul class="service-list">
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Travelling WebSite</span>
-                                    <h3 class="projects__title">TRAVEL WEBSITE</h3>
-                                    <a href="https://portfolio.zayanalfahim.com/travel.website" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
+            <li class="service-item">
 
-                        <article class="projects__card">
-                            <img src="//portfolio.zayanalfahim.com/simple.portfolio/assets/img/project_23.jpg" alt="SIMPLE CLOCK" class="projects__img">
+              <div class="service-icon-box">
+                <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/website_create.svg
+                " alt="create icon" width="40">
+              </div>
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Clock WebSite</span>
-                                    <h3 class="projects__title">SIMPLE CLOCK</h3>
-                                    <a href="https://portfolio.zayanalfahim.com/simple.clock" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                        
-                        <article class="projects__card">
-                            <img src="//portfolio.zayanalfahim.com/simple.portfolio/assets/img/project_22.jpg" alt="PORTFOLIO WEBSITE" class="projects__img">
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">WEBSITE CREATE</h4>
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Portfolio WebSite</span>
-                                    <h3 class="projects__title">PORTFOLIO WEBSITE</h3>
-                                    <a href="https://portfolio.zayanalfahim.com/portfolio.website" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                                                
-                        <article class="projects__card">
-                            <img src="//portfolio.zayanalfahim.com/simple.portfolio/assets/img/project_15.jpg" alt="PLANT.EX" class="projects__img">
+                <p class="service-item-text">
+                  If you need a website or any website related help, please contact me!
+                </p>
+              </div>
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">E-Commerce Website</span>
-                                    <h3 class="projects__title">PLANT.EX</h3>
-                                    <a href="https://portfolio.zayanalfahim.com/plant.ex" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
+            </li>
 
-                        <article class="projects__card">
-                            <img src="//portfolio.zayanalfahim.com/simple.portfolio/assets/img/project_14.jpg" alt="CLOCK.EX" class="projects__img">
+            <li class="service-item">
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">E-Commerce Website</span>
-                                    <h3 class="projects__title">CLOCK.EX</h3>
-                                    <a href="https://portfolio.zayanalfahim.com/clock.ex" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
+              <div class="service-icon-box">
+                <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/website_design.svg" alt="design icon" width="40">
+              </div>
 
-                        <article class="projects__card">
-                            <img src="//portfolio.zayanalfahim.com/simple.portfolio/assets/img/project_13.jpg" alt="FRESH FOOD" class="projects__img">
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">WEBSITE DESIGN</h4>
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Restaurant Website</span>
-                                    <h3 class="projects__title">FRESH FOOD</h3>
-                                    <a href="https://portfolio.zayanalfahim.com/fresh.food" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
+                <p class="service-item-text">
+                  If you need website design or any website related help, please contact me!
+                </p>
+              </div>
 
-                        <article class="projects__card">
-                            <img src="//portfolio.zayanalfahim.com/simple.portfolio/assets/img/project_12.jpg" alt="SIGN IN FORM" class="projects__img">
+            </li>
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Sign In Page</span>
-                                    <h3 class="projects__title">SIGN IN FORM</h3>
-                                    <a href="https://portfolio.zayanalfahim.com/sign.in.form" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
+            <li class="service-item">
 
-                        <article class="projects__card">
-                            <img src="//portfolio.zayanalfahim.com/simple.portfolio/assets/img/project_11.jpg" alt="CARD INFO" class="projects__img">
+              <div class="service-icon-box">
+                <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/website_development.svg" alt="development icon" width="40">
+              </div>
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Social Profile</span>
-                                    <h3 class="projects__title">CARD INFO</h3>
-                                    <a href="https://portfolio.zayanalfahim.com/card.info" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">WEBSITE DEVELOPMENT</h4>
 
-                        <article class="projects__card">
-                            <img src="//portfolio.zayanalfahim.com/simple.portfolio/assets/img/project_10.jpg" alt="ANALOG CLOCK" class="projects__img">
+                <p class="service-item-text">
+                  If you need website development or any website related help, please contact me!
+                </p>
+              </div>
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Clock Website</span>
-                                    <h3 class="projects__title">ANALOG CLOCK</h3>
-                                    <a href="https://portfolio.zayanalfahim.com/analog.clock" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
+            </li>
 
-                        <article class="projects__card">
-                            <img src="//portfolio.zayanalfahim.com/simple.portfolio/assets/img/project_9.jpg" alt="LOGIN FORM" class="projects__img">
+            <li class="service-item">
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Login Page</span>
-                                    <h3 class="projects__title">LOGIN FORM</h3>
-                                    <a href="https://portfolio.zayanalfahim.com/login.form" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                                                                                                                        
-                        <article class="projects__card">
-                            <img src="//portfolio.zayanalfahim.com/simple.portfolio/assets/img/project_8.jpg" alt="PROFILE CARD" class="projects__img">
+              <div class="service-icon-box">
+                <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/website_seo.svg" alt="seo icon" width="40">
+              </div>
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Social Media Link</span>
-                                    <h3 class="projects__title">PROFILE CARD</h3>
-                                    <a href="https://portfolio.zayanalfahim.com/profile.card" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                                                                                                                                                
-                        <article class="projects__card">
-                            <img src="//portfolio.zayanalfahim.com/simple.portfolio/assets/img/project_7.jpg" alt="ZAF CART" class="projects__img">
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">WEBSITE SEO</h4>
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">E-commerce WebSite</span>
-                                    <h3 class="projects__title">ZAF CART</h3>
-                                    <a href="https://portfolio.zayanalfahim.com/zaf.cart" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
+                <p class="service-item-text">
+                  If you need website SEO or any website related help, please contact me!
+                </p>
+              </div>
 
-                        <article class="projects__card">
-                            <img src="//portfolio.zayanalfahim.com/simple.portfolio/assets/img/project_6.jpg" alt="IMAGE SLIDER" class="projects__img">
+            </li>
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Image Slide WebSite</span>
-                                    <h3 class="projects__title">IMAGE SLIDER</h3>
-                                    <a href="https://portfolio.zayanalfahim.com/image.slider" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                                                                 
-                        <article class="projects__card">
-                            <img src="//portfolio.zayanalfahim.com/simple.portfolio/assets/img/project_5.jpg" alt="PERSONAL PORTFOLIO" class="projects__img">
+          </ul>
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Portfolio WebSite</span>
-                                    <h3 class="projects__title">PERSONAL PORTFOLIO</h3>
-                                    <a href="https://portfolio.zayanalfahim.com/personal.portfolio" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                        
-                        <article class="projects__card">
-                            <img src="//portfolio.zayanalfahim.com/simple.portfolio/assets/img/project_4.jpg" alt="SOCIAL CARD" class="projects__img">
+        </section>
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Social Media Link</span>
-                                    <h3 class="projects__title">SOCIAL CARD</h3>
-                                    <a href="https://portfolio.zayanalfahim.com/social.card" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                                                                                                                                                                         
-                        <article class="projects__card">
-                            <img src="//portfolio.zayanalfahim.com/simple.portfolio/assets/img/project_3.jpg" alt="DEVELOPER PORTFOLIO" class="projects__img">
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Portfolio WebSite</span>
-                                    <h3 class="projects__title">DEVELOPER PORTFOLIO</h3>
-                                    <a href="https://zayanalfahim.blogspot.com" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                         
-                        <article class="projects__card">
-                            <img src="//portfolio.zayanalfahim.com/simple.portfolio/assets/img/project_2.jpg" alt="RESPONSIVE PORTFOLIO" class="projects__img">
+        <!--
+          - testimonials
+        -->
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Portfolio WebSite</span>
-                                    <h3 class="projects__title">RESPONSIVE PORTFOLIO</h3>
-                                    <a href="https://zayan-alfahim.blogspot.com" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                        
-                        <article class="projects__card">
-                            <img src="//portfolio.zayanalfahim.com/simple.portfolio/assets/img/project_1.jpg" alt="ZAF UI" class="projects__img">
+        <section class="testimonials">
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Blogging WebSite</span>
-                                    <h3 class="projects__title">ZAF UI</h3>
-                                    <a href="https://zaf-ui.blogspot.com" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                                                                                                                                            
-                    </div>                        
+          <h3 class="h3 testimonials-title">TEAM</h3>
 
-                    <!--=============== SKILLS ===============-->
-                    <div class="skills__content grid" data-content id="skills">
-                        <div class="skills__area">
-                            <h3 class="skills__title">PROGRAMMING LANGUAGE</h3>
-    
-                            <div class="skills__box">
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">HTML</h3>
-                                            <span class="skills__level">Advanced</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">CSS</h3>
-                                            <span class="skills__level">Advanced</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">JAVA SCRIPT</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">DART</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">PHP</h3>
-                                            <span class="skills__level">Basic</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+          <ul class="testimonials-list has-scrollbar">
 
-                        <div class="skills__area">
-                            <h3 class="skills__title">WEBSITE BELLEDER - CMS</h3>
-    
-                            <div class="skills__box">
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">SHOPIFY</h3>
-                                            <span class="skills__level">Advance</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">WORDPRESS</h3>
-                                            <span class="skills__level">Advance</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">SQUARESPACE</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">WIX</h3>
-                                            <span class="skills__level">Intermediate</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">BLOGGER</h3>
-                                            <span class="skills__level">Advance</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/employee_profile_1.png" alt="MOHAMMAD ABDULLAH" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>MOHAMMAD ABDULLAH</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Hi, I'm a web designer with experience in websites design. I’ve worked internationally and in-house on projects for leading brands, agencies and startups...
+                  </p>
                 </div>
-            </section>
-        </main>
 
-        <!--=============== FOOTER ===============-->
-        <footer class="footer container">
-            <span class="footer__copy">
-                &#169; ZAYAN AL FAHIM. ALL RIGHTS RESERVED</br>...
-            </span>
-        </footer>
+              </div>
+            </li>
+            
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
 
-        <!--=============== SCROLL REVEAL ===============-->
-        <script src="//portfolio.zayanalfahim.com/simple.portfolio/assets/js/scroll_reveal.js"></script>
+                <figure class="testimonials-avatar-box">
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/employee_profile_2.png" alt="MOHAMMAD SAYAN" width="60" data-testimonials-avatar>
+                </figure>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="//portfolio.zayanalfahim.com/simple.portfolio/assets/js/script.js"></script>
-    </body>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>MOHAMMAD AYAN</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                  Hi, I'm a web developer with experience in websites development. I’ve worked internationally and in-house on projects for leading brands, agencies and startups...	
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/employee_profile_3.png" alt="MOHAMMAD YAMEEN" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>MOHAMMAD YAMEEN</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                  Hi, I'm a digital marketer with experience in digital marketing. I’ve worked internationally and in-house on projects for leading brands, agencies and startups...	
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/employee_profile_4.png" alt="MOHAMMAD AYAN" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>MOHAMMAD SAYAN</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                   Hi, I'm a SEO expert with experience in websites SEO. I’ve worked internationally and in-house on projects for leading brands, agencies and startups...
+                </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/profile.png" alt="ZAYAN AL FAHIM" width="80" data-modal-img>
+              </figure>
+
+              <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/quote_icon.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>ZAYAN AL FAHIM</h4>
+
+              <!--<time datetime="2020-02-29">29 February, 2020</time>-->
+
+              <div data-modal-text>
+                <p>
+                  Hi, I'm zayan al fahim, a full-stack web developer with experience in building websites. I’ve worked internationally and in-house on projects for leading brands, agencies and startups. I care deeply about providing world-class, useful, and beautiful services that help people and make a difference...
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">CLIENTS</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#Link">
+                <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/client_logo_1.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#Link">
+                <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/client_logo_2.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#Link">
+                <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/client_logo_3.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#Link">
+                <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/client_logo_4.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#Link">
+                <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/client_logo_5.png" alt="client logo">
+              </a>
+            </li>
+            
+            <li class="clients-item">
+              <a href="#Link">
+                <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/client_logo_6.png" alt="client logo">
+              </a>
+            </li>
+            
+            <li class="clients-item">
+              <a href="#Link">
+                <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/client_logo_7.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#Link">
+                <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/client_logo_8.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">RESUME</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">EDUCATION</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">HIGHER SECONDARY CERTIFICATE (HSC)</h4>
+              
+              <p class="timeline-text">SATKANIA GOVERNMENT COLLEGE</p>            
+
+              <span>Passing Year - 2022</span>
+
+              </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SECONDARY SCHOOL CERTIFICATE (SSC)</h4>
+              
+              <p class="timeline-text">SUKCHARI HIGH SCHOOL</p> 
+
+              <span>Passing Year - 2019</span>
+
+              </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">JUNIOR SCHOOL CERTIFICATE (JSC)</h4>
+              
+              <p class="timeline-text">CHARAMBA HIGH SCHOOL</p> 
+
+              <span>Passing Year - 2016</span>
+
+              </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">EXPERIENCE</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">WEBSITE DESIGN</h4>
+
+              <span>From 2020 — Present</span>
+
+              <p class="timeline-text">Fiverr</p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">WEBSITE DEVELOPMENT</h4>
+
+              <span>From 2021 — Present</span>
+
+              <p class="timeline-text">Upwork</p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">WEBSITE SEO</h4>
+
+              <span>From 2022 — Present</span>
+
+              <p class="timeline-text">Upwork</p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">MY SKILLS</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">HTML</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">CSS</h5>
+                <data value="58">58%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 58%;"></div>
+              </div>
+
+            </li>
+            
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">JAVA SCRIPT</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">SHOPIFY</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WORDPRESS</h5>
+                <data value="88">88%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 88%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">PORTFOLIO</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>WebSite Design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>WebSite Development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>WebSite SEO</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select Category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>WebSite Design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>WebSite Development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>WebSite SEO</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="website design">
+              <a href="https://www.zayanalfahim.info/resume.cv">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/project_28.jpg" alt="RESUME CV" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">RESUME CV</h3>
+
+                <p class="project-category">Resume WebSite</p>
+
+              </a>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="website design">
+              <a href="https://www.zayanalfahim.info/simple.portfolio">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/project_27.jpg" alt="SIMPLE PORTFOLIO" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">SIMPLE PORTFOLIO</h3>
+
+                <p class="project-category">Portfolio WebSite</p>
+
+              </a>
+            </li>
+
+            
+            <li class="project-item  active" data-filter-item data-category="website design">
+              <a href="https://www.zayanalfahim.info/my.portfolio">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/project_26.jpg" alt="MY PORTFOLIO" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MY PORTFOLIO</h3>
+
+                <p class="project-category">Portfolio WebSite</p>
+
+              </a>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="website development">
+              <a href="https://zaf-express-bd.blogspot.com">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/project_25.jpg" alt="ZAF EXPRESS BD" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">ZAF EXPRESS BD</h3>
+
+                <p class="project-category">E-commerce Site</p>
+
+              </a>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="website design">
+              <a href="https://www.zayanalfahim.info/travel.website">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/project_24.jpg" alt="TRAVEL WEBSITE" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">TRAVEL WEBSITE</h3>
+
+                <p class="project-category">Travelling WebSite</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="website design">
+              <a href="https://www.zayanalfahim.info/simple.clock">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/project_23.jpg" alt="SIMPLE CLOCK" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">SIMPLE CLOCK</h3>
+
+                <p class="project-category">Simple WebSite</p>
+
+              </a>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="website design">
+              <a href="https://www.zayanalfahim.info/portfolio.website">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/project_22.jpg" alt="PORTFOLIO WEBSITE" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">PORTFOLIO WEBSITE</h3>
+
+                <p class="project-category">Portfolio WebSite</p>
+
+              </a>
+            </li> 
+
+            <li class="project-item  active" data-filter-item data-category="website design">
+              <a href="https://www.zayanalfahim.info/plant.ex">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/project_15.jpg" alt="PLANT.EX" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">PLANT.EX</h3>
+
+                <p class="project-category">E-Commerce Website</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="website design">
+              <a href="https://www.zayanalfahim.info/clock.ex">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/project_14.jpg" alt="CLOCK.EX" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">CLOCK.EX</h3>
+
+                <p class="project-category">E-Commerce Website</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="website design">
+              <a href="https://www.zayanalfahim.info/fresh.food">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/project_13.jpg" alt="FRESH FOOD" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">FRESH FOOD</h3>
+
+                <p class="project-category">Restaurant Website</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="website design">
+              <a href="https://www.zayanalfahim.info/sign.in.form">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/project_12.jpg" alt="SIGN IN FORM" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">SIGN IN FORM</h3>
+
+                <p class="project-category">Sign In Page</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="website design">
+              <a href="https://www.zayanalfahim.info/card.info">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/project_11.jpg" alt="CARD INFO" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">CARD INFO</h3>
+
+                <p class="project-category">Social Profile</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="website design">
+              <a href="https://www.zayanalfahim.info/analog.clock">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/project_10.jpg" alt="ANALOG CLOCK" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">ANALOG CLOCK</h3>
+
+                <p class="project-category">Clock Website</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="website design">
+              <a href="https://www.zayanalfahim.info/login.form">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/project_9.jpg" alt="LOGIN FORM" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">LOGIN FORM</h3>
+
+                <p class="project-category">Login Page</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="website design">
+              <a href="https://www.zayanalfahim.info/profile.card">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/project_8.jpg" alt="PROFILE CARD" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">PROFILE CARD</h3>
+
+                <p class="project-category">Social Media Link</p>
+
+              </a>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="website design">
+              <a href="https://www.zayanalfahim.info/zaf.cart">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/project_7.jpg" alt="ZAF CART" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">ZAF CART</h3>
+
+                <p class="project-category">E-commerce WebSite</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="website design">
+              <a href="https://www.zayanalfahim.info/image.slider">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/project_6.jpg" alt="IMAGE SLIDER" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">IMAGE SLIDER</h3>
+
+                <p class="project-category">Image Slide WebSite</p>
+
+              </a>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="website design">
+              <a href="https://www.zayanalfahim.info/personal.portfolio">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/project_5.jpg" alt="PERSONAL PORTFOLIO" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">PERSONAL PORTFOLIO</h3>
+
+                <p class="project-category">Portfolio WebSite</p>
+
+              </a>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="website design">
+              <a href="https://www.zayanalfahim.info/social.card">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/project_4.jpg" alt="SOCIAL CARD" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">SOCIAL CARD</h3>
+
+                <p class="project-category">Social Media Link</p>
+
+              </a>
+            </li>            
+           
+            <li class="project-item  active" data-filter-item data-category="website development">
+              <a href="https://zayanalfahim.blogspot.com">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/project_3.jpg" alt="DEVELOPER PORTFOLIO" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DEVELOPER PORTFOLIO</h3>
+
+                <p class="project-category">Portfolio WebSite</p>
+
+              </a>
+            </li>
+      
+            <li class="project-item  active" data-filter-item data-category="website development">
+              <a href="https://zayan-alfahim.blogspot.com">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/project_2.jpg" alt="RESPONSIVE PORTFOLIO" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">RESPONSIVE PORTFOLIO</h3>
+
+                <p class="project-category">Portfolio WebSite</p>
+
+              </a>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="website development">
+              <a href="https://zaf-ui.blogspot.com">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/project_1.jpg" alt="ZAF UI" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">ZAF UI</h3>
+
+                <p class="project-category">Blogging WebSite</p>
+
+              </a>
+            </li>
+           
+          </ul>
+
+        </section>
+
+      </article>
+
+
+<!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">BLOG</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://blog.zayanalfahim.com/">
+
+                <figure class="blog-banner-box">
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/blog_1.jpg" alt="ZAYAN AL FAHIM" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">ZAYAN</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 28, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">MY STORY</h3>
+
+                  <p class="blog-text">
+                    Hi, I'm Zayan Al Fahim, a Web Developer & Content Creator.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://blog.zayanalfahim.com/">
+
+                <figure class="blog-banner-box">
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/blog_2.jpg" alt="ZAYAN AL FAHIM" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">ZAYAN</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 26, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">ZAYAN AL FAHIM</h3>
+
+                  <p class="blog-text">
+                    I Always Like Something Simple and Creative...
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+           
+
+            <li class="blog-post-item">
+              <a href="https://blog.zayanalfahim.com/">
+
+                <figure class="blog-banner-box">
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/blog_3.jpg" alt="ZAYAN AL FAHIM" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">ZAYAN</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 25, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">ZAYAN AL FAHIM</h3>
+
+                  <p class="blog-text">
+                    Hi, I'm Zayan Al Fahim, a Web Developer & Content Creator.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://blog.zayanalfahim.com/">
+
+                <figure class="blog-banner-box">
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/blog_4.jpg" alt="ZAYAN AL FAHIM" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">ZAYAN</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 24, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">ZAYAN AL FAHIM</h3>
+
+                  <p class="blog-text">
+                    I Always Like Something Simple and Creative...
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://blog.zayanalfahim.com/">
+
+                <figure class="blog-banner-box">
+                  <img src="https://www.zayanalfahim.info/my.portfolio/assets/img/blog_5.jpg" alt="ZAYAN AL FAHIM" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">ZAYAN</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">ZAYAN AL FAHIM</h3>
+
+                  <p class="blog-text">
+                    Hi, I'm Zayan Al Fahim, a Web Developer & Content Creator.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">CONTACT</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed/v1/place?q=F∆HIM,+Bibibila&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">CONTACT FORM</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full Name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email Address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="https://www.zayanalfahim.info/my.portfolio/assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
